@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sou Vet Hospital Veterinário | Atendimento 24h em João Pessoa</title>
+  <meta name="description" content="Sou Vet Hospital Veterinário no Bessa, João Pessoa - PB. Atendimento e internamento 24 horas, cirurgia, exames e diagnóstico por imagem. Bem-estar animal em primeiro lugar." />
+  <link rel="icon" type="image/png" href="assets/img/logo-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-paw" viewBox="0 0 64 64"><ellipse cx="18" cy="22" rx="6" ry="8"/><ellipse cx="46" cy="22" rx="6" ry="8"/><ellipse cx="8" cy="36" rx="5" ry="7"/><ellipse cx="56" cy="36" rx="5" ry="7"/><path d="M32 30c-9 0-18 12-18 20 0 6 5 8 10 7 3-1 5-2 8-2s5 1 8 2c5 1 10-1 10-7 0-8-9-20-18-20z"/></symbol>
+    <symbol id="i-bone" viewBox="0 0 64 32"><path d="M10 4a6 6 0 0 1 8 5h28a6 6 0 1 1 8 7 6 6 0 1 1-8 7H18a6 6 0 1 1-8-7 6 6 0 0 1 0-12z"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.5.6 3.6a1 1 0 0 1-.3 1z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.7 1.3 16.1 1.2C14.5 1.1 9.5 1.1 7.9 1.2 6.3 1.3 4.9 1.6 3.7 2.8S2.1 5.5 2 7.1C1.9 8.7 1.9 13.7 2 15.3c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.6.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.2-1.6.2-6.6.1-8.2zm-2.1 10a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4A3.3 3.3 0 0 1 4.2 17c-.5-1.3-.4-4.4-.4-5.9s-.1-4.6.4-5.9A3.3 3.3 0 0 1 6.1 3.3c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.6-.4 5.9z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h2.5V1.5H14.2C10.6 1.5 10 4 10 5.7V8H7.5v3.7H10V22.5h4V11.7h3l.4-3.7z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M13.2 5.3 19.9 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5l-6.4 3.7 1.6-7.1L1.8 9.3 9 8.6z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.8 8.3 3 4 7 4c2.1 0 3.6 1.1 5 3 1.4-1.9 2.9-3 5-3 4 0 6.2 4.3 4.6 7.8C19.5 16.4 12 21 12 21z"/></symbol>
+  </svg>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><svg><use href="#i-clock"/></svg> Aberto 24 horas, todos os dias</span>
+        <span class="hide-sm"><svg><use href="#i-pin"/></svg> Av. Pres. Nilo Peçanha, 349 · Bessa · João Pessoa</span>
+      </div>
+      <div class="topbar__social">
+        <a href="https://www.instagram.com/souvetjp/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-insta"/></svg></a>
+        <a href="https://www.facebook.com/souvetjp" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Sou Vet - início">
+        <img src="assets/img/logo-icon.png" alt="" class="brand__icon" />
+        <span class="brand__text">
+          <span class="brand__name">Sou<b>Vet</b></span>
+          <span class="brand__sub">Hospital Veterinário</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link active">Início</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#estrutura" class="nav__link">Estrutura</a>
+        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <a href="tel:+558330218822" class="header__call">
+        <span class="header__call-icon"><svg><use href="#i-phone"/></svg></span>
+        <span>
+          <small>Emergência 24h</small>
+          <strong>(83) 3021-8822</strong>
+        </span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="doodles" aria-hidden="true">
+        <svg class="doodle d1"><use href="#i-paw"/></svg>
+        <svg class="doodle d2"><use href="#i-bone"/></svg>
+        <svg class="doodle d3"><use href="#i-paw"/></svg>
+        <svg class="doodle d4"><use href="#i-heart"/></svg>
+        <svg class="doodle d5"><use href="#i-paw"/></svg>
+        <svg class="doodle d6"><use href="#i-bone"/></svg>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal">💛 Bem-estar animal em primeiro lugar</span>
+          <h1 class="hero__title reveal" data-delay="1">
+            Cuidado <span class="hl-yellow">24 horas</span><br />
+            para quem é da <span class="hl-green">família</span>
+          </h1>
+          <p class="hero__text reveal" data-delay="2">
+            No coração do Bessa, em João Pessoa, a Sou Vet une equipe experiente, estrutura completa e muito carinho para cuidar do seu cão ou gato em qualquer hora do dia ou da noite.
+          </p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a href="https://api.whatsapp.com/send?phone=5583988252085&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="btn btn--green">
+              <svg><use href="#i-whats"/></svg> Agendar pelo WhatsApp
+            </a>
+            <a href="tel:+558330218822" class="btn btn--ghost">
+              <svg><use href="#i-phone"/></svg> Ligar agora
+            </a>
+          </div>
+          <div class="hero__trust reveal" data-delay="4">
+            <div class="stars">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </div>
+            <p><strong>4,6 no Google</strong> · mais de 700 avaliações de tutores</p>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="2">
+          <div class="blob blob--outline"></div>
+          <div class="blob blob--yellow"></div>
+          <div class="hero__img">
+            <img src="assets/img/hero-beagle.jpg" alt="Cachorro beagle feliz olhando para a câmera" />
+          </div>
+          <div class="float-badge fb-1">
+            <span class="pulse"></span>
+            <div><strong>Aberto agora</strong><small>Atendimento 24h</small></div>
+          </div>
+          <div class="float-badge fb-2">
+            <span class="fb-icon"><svg><use href="#i-heart"/></svg></span>
+            <div><strong>Internamento</strong><small>monitorado 24h</small></div>
+          </div>
+          <div class="float-badge fb-3">
+            <strong class="big">+8,9 mil</strong><small>tutores no Instagram</small>
+          </div>
+        </div>
+      </div>
+
+      <svg class="wave wave--bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/>
+      </svg>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container features__grid">
+        <article class="feature reveal" style="--c: var(--green)">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7z"/></svg>
+          </div>
+          <h3>Plantão 24 horas</h3>
+          <p>Emergências a qualquer hora, inclusive fins de semana e feriados.</p>
+        </article>
+        <article class="feature reveal" data-delay="1" style="--c: var(--yellow)">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3a2 2 0 0 0-2 2v7h2v-2h16v2h2v-7a2 2 0 0 0-2-2zM6 6h12v3h-2a2 2 0 0 0-2 2H10a2 2 0 0 0-2-2H6zm14 8H4v-3h16z"/></svg>
+          </div>
+          <h3>Internamento</h3>
+          <p>Leitos com acompanhamento contínuo da equipe médica.</p>
+        </article>
+        <article class="feature reveal" data-delay="2" style="--c: var(--blue)">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24"><path d="M19 8h-2V6a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H5a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7a3 3 0 0 0-3-3zM9 6h6v2H9zm7 9h-3v3h-2v-3H8v-2h3v-3h2v3h3z"/></svg>
+          </div>
+          <h3>Equipe especializada</h3>
+          <p>Clínicos, cirurgiões e especialistas dedicados ao seu pet.</p>
+        </article>
+        <article class="feature reveal" data-delay="3" style="--c: var(--coral)">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.8 8.3 3 4 7 4c2.1 0 3.6 1.1 5 3 1.4-1.9 2.9-3 5-3 4 0 6.2 4.3 4.6 7.8C19.5 16.4 12 21 12 21z"/></svg>
+          </div>
+          <h3>Acolhimento</h3>
+          <p>Atendimento humano e carinhoso, com o tutor sempre informado.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__content">
+          <span class="eyebrow reveal">Bem-vindo à Sou Vet</span>
+          <h2 class="section-title reveal" data-delay="1">O melhor amigo do <span class="hl-green">seu pet</span> em João Pessoa</h2>
+          <p class="reveal" data-delay="2">
+            Somos um hospital veterinário completo, pensado para oferecer segurança ao tutor e conforto ao paciente. Aqui, cada recuperação é comemorada como se fosse da nossa própria família.
+          </p>
+
+          <div class="accordion reveal" data-delay="3">
+            <div class="acc-item open">
+              <button class="acc-head">Profissionais apaixonados pelo que fazem <span class="acc-icon"></span></button>
+              <div class="acc-body"><p>Médicos veterinários que escolheram dedicar a vida a cuidar de quem não tem voz. Experiência e técnica em cada procedimento, com olhar atento a cada detalhe.</p></div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-head">Estrutura completa em um só lugar <span class="acc-icon"></span></button>
+              <div class="acc-body"><p>Consultórios, centro cirúrgico, internamento, laboratório e diagnóstico por imagem. Menos deslocamento e mais agilidade para o seu pet.</p></div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-head">Tutor informado em cada etapa <span class="acc-icon"></span></button>
+              <div class="acc-body"><p>Explicamos cada orientação com clareza e mantemos você por perto durante todo o tratamento, da consulta à alta.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual reveal" data-delay="2">
+          <div class="about__circle"></div>
+          <svg class="squiggle sq-1" viewBox="0 0 60 60" aria-hidden="true"><path d="M10 50 C 0 30, 30 30, 20 10 M30 50 C 20 30, 50 30, 40 10" /></svg>
+          <svg class="squiggle sq-2" viewBox="0 0 60 60" aria-hidden="true"><path d="M8 40 q10 -20 20 0 t20 0" /></svg>
+          <div class="about__img">
+            <img src="assets/img/dog-cat.jpg" alt="Cachorro e gato deitados juntos na grama" loading="lazy" />
+          </div>
+          <div class="stat-card sc-1">
+            <strong><span class="counter" data-target="716">0</span>+</strong>
+            <small>Avaliações no Google</small>
+          </div>
+          <div class="stat-card sc-2">
+            <strong><span class="counter" data-target="24">0</span>h</strong>
+            <small>Todos os dias</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Clínica geral</span><svg><use href="#i-paw"/></svg>
+        <span>Emergência 24h</span><svg><use href="#i-paw"/></svg>
+        <span>Internamento</span><svg><use href="#i-paw"/></svg>
+        <span>Cirurgia</span><svg><use href="#i-paw"/></svg>
+        <span>Ultrassonografia</span><svg><use href="#i-paw"/></svg>
+        <span>Raio-X</span><svg><use href="#i-paw"/></svg>
+        <span>Laboratório</span><svg><use href="#i-paw"/></svg>
+        <span>Vacinas</span><svg><use href="#i-paw"/></svg>
+        <span>Clínica geral</span><svg><use href="#i-paw"/></svg>
+        <span>Emergência 24h</span><svg><use href="#i-paw"/></svg>
+        <span>Internamento</span><svg><use href="#i-paw"/></svg>
+        <span>Cirurgia</span><svg><use href="#i-paw"/></svg>
+        <span>Ultrassonografia</span><svg><use href="#i-paw"/></svg>
+        <span>Raio-X</span><svg><use href="#i-paw"/></svg>
+        <span>Laboratório</span><svg><use href="#i-paw"/></svg>
+        <span>Vacinas</span><svg><use href="#i-paw"/></svg>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Nossos serviços</span>
+          <h2 class="section-title reveal" data-delay="1">Tudo o que seu pet precisa, <span class="hl-yellow">em um só lugar</span></h2>
+          <p class="reveal" data-delay="2">Da consulta de rotina à emergência: atendimento completo para cães e gatos, com agilidade e segurança.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M19 3h-4.2A3 3 0 0 0 12 1a3 3 0 0 0-2.8 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm4 12h-3v3h-2v-3H8v-2h3v-3h2v3h3z"/></svg></div>
+            <h3>Clínica geral</h3>
+            <p>Consultas, check-ups e acompanhamento preventivo para todas as fases da vida.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 2 1 21h22zm1 16h-2v-2h2zm0-4h-2v-4h2z"/></svg></div>
+            <h3>Emergência 24h</h3>
+            <p>Plantão ininterrupto para urgências, com estabilização rápida e equipe pronta.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3a2 2 0 0 0-2 2v7h2v-2h16v2h2v-7a2 2 0 0 0-2-2zM6 6h12v3h-2a2 2 0 0 0-2 2H10a2 2 0 0 0-2-2H6zm14 8H4v-3h16z"/></svg></div>
+            <h3>Internamento</h3>
+            <p>Monitoramento 24 horas, medicação no horário certo e boletins para o tutor.</p>
+          </article>
+          <article class="service reveal" data-delay="3">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M9.6 4.5 13 8 4 17l-1 4 4-1 9-9 3.5 3.4 1.4-1.4-10-10zM19 2l3 3-2 2-3-3z"/></svg></div>
+            <h3>Cirurgia</h3>
+            <p>Centro cirúrgico equipado para procedimentos eletivos e de urgência.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M7 2v2h1v6.3L3.3 18.6A2 2 0 0 0 5 21.5h14a2 2 0 0 0 1.7-2.9L16 10.3V4h1V2zm3 2h4v6.8l2 3.2H8l2-3.2z"/></svg></div>
+            <h3>Exames laboratoriais</h3>
+            <p>Laboratório próprio para resultados ágeis e diagnósticos mais precisos.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm9 2c-1 0-1.5 1-1.5 1.5v1H8v2h2.5v1H8v2h2.5v1c0 .5.5 1.5 1.5 1.5s1.5-1 1.5-1.5v-1H16v-2h-2.5v-1H16v-2h-2.5v-1C13.5 8 13 7 12 7z"/></svg></div>
+            <h3>Diagnóstico por imagem</h3>
+            <p>Raio-X e ultrassonografia com laudos de profissionais experientes.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg></div>
+            <h3>Especialidades</h3>
+            <p>Atendimento com especialistas, como oftalmologia, para casos que pedem um olhar a mais.</p>
+          </article>
+          <article class="service reveal" data-delay="3">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="m20.3 2.3 1.4 1.4-2 2 1.4 1.4-1.4 1.4-1.4-1.4-6.4 6.4 1.4 1.4-1.4 1.4-1-1-4.2 4.2H4.6l-1.3 1.4-1.4-1.4 1.4-1.3v-2.2l4.2-4.2-1-1 1.4-1.4 1.4 1.4 6.4-6.4-1.4-1.4 1.4-1.4 1.4 1.4z"/></svg></div>
+            <h3>Vacinas e prevenção</h3>
+            <p>Protocolos vacinais, vermifugação e orientação para uma vida longa e saudável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta">
+      <svg class="wave wave--top" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C320,110 620,0 900,50 C1140,92 1300,40 1440,60 L1440,0 L0,0 Z" fill="#ffffff"/>
+      </svg>
+      <div class="cta__bg-paws" aria-hidden="true">
+        <svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg>
+      </div>
+      <div class="container cta__grid">
+        <div class="cta__img reveal">
+          <img src="assets/img/vet-cat.jpg" alt="Veterinária fazendo carinho em um gato durante atendimento" loading="lazy" />
+        </div>
+        <div class="cta__content">
+          <span class="eyebrow eyebrow--light reveal">Emergência? Estamos acordados por você</span>
+          <h2 class="reveal" data-delay="1">Seu pet precisa de ajuda agora? <span>A gente atende.</span></h2>
+          <p class="reveal" data-delay="2">Nossa equipe está de plantão 24 horas por dia, 7 dias por semana. Fale com a gente pelo WhatsApp ou ligue direto para o hospital.</p>
+          <div class="cta__actions reveal" data-delay="3">
+            <a href="https://api.whatsapp.com/send?phone=5583988252085&text=Ol%C3%A1!%20Preciso%20de%20atendimento%20para%20meu%20pet." target="_blank" rel="noopener" class="btn btn--yellow">
+              <svg><use href="#i-whats"/></svg> (83) 98825-2085
+            </a>
+            <a href="tel:+558330218822" class="btn btn--white">
+              <svg><use href="#i-phone"/></svg> (83) 3021-8822
+            </a>
+          </div>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,70 C300,10 560,110 860,60 C1100,20 1280,90 1440,50 L1440,120 L0,120 Z" fill="#FBF5EA"/>
+      </svg>
+    </section>
+
+    <!-- ESTRUTURA / GALERIA -->
+    <section class="gallery" id="estrutura">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Por dentro da Sou Vet</span>
+          <h2 class="section-title reveal" data-delay="1">Técnica, cuidado e <span class="hl-green">muito amor</span> em cada etapa</h2>
+        </div>
+
+        <div class="gallery__grid">
+          <figure class="g-item g-tall reveal">
+            <img src="assets/img/cirurgia.jpg" alt="Cirurgião veterinário da Sou Vet durante procedimento" loading="lazy" />
+            <figcaption>Centro cirúrgico</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-delay="1">
+            <img src="assets/img/cat-green.jpg" alt="Gato branco e preto sobre fundo verde" loading="lazy" />
+            <figcaption>Nossos pacientes</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-delay="2">
+            <img src="assets/img/pug.jpg" alt="Pug preto de blusa sobre fundo amarelo" loading="lazy" />
+            <figcaption>Cães de todas as raças</figcaption>
+          </figure>
+          <figure class="g-item g-tall reveal" data-delay="1">
+            <img src="assets/img/lab.jpg" alt="Profissional da Sou Vet manuseando amostras no laboratório" loading="lazy" />
+            <figcaption>Laboratório próprio</figcaption>
+          </figure>
+          <figure class="g-item g-wide reveal" data-delay="2">
+            <img src="assets/img/dogs-run.jpg" alt="Dois cachorros correndo felizes em uma estrada de terra" loading="lazy" />
+            <figcaption>Saúde para aproveitar a vida</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Depoimentos</span>
+          <h2 class="section-title reveal" data-delay="1">Quem confia, <span class="hl-yellow">recomenda</span></h2>
+          <div class="rating-pill reveal" data-delay="2">
+            <span class="g-logo">G</span>
+            <strong>4,6</strong>
+            <span class="stars sm"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <span>716 avaliações no Google</span>
+          </div>
+        </div>
+
+        <div class="testi__grid">
+          <article class="testi reveal">
+            <div class="testi__quote">“</div>
+            <p>Fui atendida à noite e o atendimento foi excelente. O Dr. João foi muito cuidadoso com meu gato, o Gil, e passou todas as orientações e cuidados pra gente. Agradeço pelo ótimo atendimento e acolhimento!</p>
+            <div class="testi__author">
+              <span class="avatar" style="--c: var(--green)">I</span>
+              <div><strong>Isabela M.</strong><small>Tutora do Gil 🐱</small></div>
+            </div>
+          </article>
+          <article class="testi reveal" data-delay="1">
+            <div class="testi__quote">“</div>
+            <p>Meus pets são acompanhados por essa clínica há muitos anos e, a cada atendimento, minha confiança e admiração só aumentam. Quero registrar minha imensa satisfação.</p>
+            <div class="testi__author">
+              <span class="avatar" style="--c: var(--yellow)">K</span>
+              <div><strong>Kaline R.</strong><small>Cliente há muitos anos</small></div>
+            </div>
+          </article>
+          <article class="testi reveal" data-delay="2">
+            <div class="testi__quote">“</div>
+            <p>Ótimo tratamento, ambiente, pessoas atenciosas comigo e com meus bichos. Profissionais atenciosos e recepção muito amigável.</p>
+            <div class="testi__author">
+              <span class="avatar" style="--c: var(--blue)">G</span>
+              <div><strong>Avaliação no Google</strong><small>Tutor Sou Vet</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <span class="eyebrow reveal">Visite a gente</span>
+          <h2 class="section-title reveal" data-delay="1">Estamos no <span class="hl-green">Bessa</span>, de portas abertas 24h</h2>
+
+          <ul class="contact__list">
+            <li class="reveal" data-delay="1">
+              <span class="ci" style="--c: var(--green)"><svg><use href="#i-pin"/></svg></span>
+              <div><strong>Endereço</strong><p>Av. Pres. Nilo Peçanha, 349 - Bessa<br />João Pessoa - PB, 58035-200</p></div>
+            </li>
+            <li class="reveal" data-delay="2">
+              <span class="ci" style="--c: var(--yellow)"><svg><use href="#i-clock"/></svg></span>
+              <div><strong>Horário</strong><p>Aberto 24 horas, todos os dias<br />Atendimento e internamento</p></div>
+            </li>
+            <li class="reveal" data-delay="3">
+              <span class="ci" style="--c: var(--blue)"><svg><use href="#i-phone"/></svg></span>
+              <div><strong>Telefones</strong><p><a href="tel:+558330218822">(83) 3021-8822</a><br /><a href="https://api.whatsapp.com/send?phone=5583988252085" target="_blank" rel="noopener">(83) 98825-2085 · WhatsApp</a></p></div>
+            </li>
+          </ul>
+
+          <div class="contact__actions reveal" data-delay="3">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Sou+Vet+Hospital+Veterinario+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener" class="btn btn--blue">
+              <svg><use href="#i-pin"/></svg> Como chegar
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5583988252085" target="_blank" rel="noopener" class="btn btn--green">
+              <svg><use href="#i-whats"/></svg> Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map reveal" data-delay="2">
+          <iframe
+            title="Mapa da Sou Vet Hospital Veterinário"
+            src="https://www.google.com/maps?q=-7.0677856,-34.8426516&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+          <div class="map-tag">
+            <img src="assets/img/logo-icon.png" alt="" />
+            <div><strong>Sou Vet</strong><small>Hospital Veterinário</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <svg class="wave wave--top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C360,100 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,0 L0,0 Z" fill="#ffffff"/>
+    </svg>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="brand brand--light">
+          <img src="assets/img/logo-icon.png" alt="" class="brand__icon" />
+          <span class="brand__text">
+            <span class="brand__name">Sou<b>Vet</b></span>
+            <span class="brand__sub">Hospital Veterinário</span>
+          </span>
+        </a>
+        <p>O melhor amigo do seu pet. 💛<br />Bem-estar animal em primeiro lugar, 24 horas por dia.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/souvetjp/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-insta"/></svg></a>
+          <a href="https://www.facebook.com/souvetjp" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://api.whatsapp.com/send?phone=5583988252085" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whats"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li>Emergência 24h</li>
+          <li>Internamento</li>
+          <li>Cirurgia</li>
+          <li>Exames e imagem</li>
+          <li>Vacinas</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer__contact">
+          <li><svg><use href="#i-pin"/></svg> Av. Pres. Nilo Peçanha, 349 - Bessa, João Pessoa - PB</li>
+          <li><svg><use href="#i-phone"/></svg> <a href="tel:+558330218822">(83) 3021-8822</a></li>
+          <li><svg><use href="#i-whats"/></svg> <a href="https://api.whatsapp.com/send?phone=5583988252085" target="_blank" rel="noopener">(83) 98825-2085</a></li>
+          <li><svg><use href="#i-clock"/></svg> Aberto 24 horas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Sou Vet Hospital Veterinário. Todos os direitos reservados.</p>
+      <a href="#inicio" class="to-top" aria-label="Voltar ao topo"><svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=5583988252085&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sou%20Vet." target="_blank" rel="noopener" class="whats-float" aria-label="Fale conosco no WhatsApp">
+    <svg><use href="#i-whats"/></svg>
+    <span class="whats-float__tip">Fale com a gente!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
