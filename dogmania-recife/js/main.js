@@ -93,7 +93,7 @@
 
     // Parallax suave no visual do hero
     const hero = document.querySelector(".hero");
-    const dog = document.querySelector(".hero__dog");
+    const dog = document.querySelector(".hero__photo");
     const cards = document.querySelectorAll(".fcard");
     hero.addEventListener("mousemove", (e) => {
       const r = hero.getBoundingClientRect();
