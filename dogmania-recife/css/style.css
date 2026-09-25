@@ -251,7 +251,11 @@ h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); font-weight: 700; }
   .bento__col { grid-column: auto; }
   .tile--img { min-height: 360px; }
   .hero__actions .btn { width: 100%; min-width: 0; }
-  .hero__tags { max-width: 220px; }
+  .hero__tags { max-width: 230px; }
+  .hero__tags span { font-size: .68rem; padding: 4px 9px; }
+  .hero__card { aspect-ratio: 4 / 5; }
+  .hero__pet { height: 72%; object-position: 50% 70%; }
+  .hero__rating { left: 14px; bottom: 14px; padding: 8px 12px; }
   .contact__box { padding: 26px; border-radius: 26px; }
   .footer__inner { flex-direction: column; text-align: center; }
   .offer .btn { width: 100%; }
