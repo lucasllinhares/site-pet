@@ -1,3 +1,6 @@
 .claude/
 .vercel/
 souvet/assets/ig/
+
+.vercel
+.env*
