@@ -53,51 +53,81 @@
   <main>
     <!-- HERO -->
     <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        <svg class="hp hp1"><use href="#i-paw"/></svg>
+        <svg class="hp hp2"><use href="#i-paw"/></svg>
+        <svg class="hp hp3"><use href="#i-cross"/></svg>
+        <svg class="hp hp4"><use href="#i-paw"/></svg>
+      </div>
+
       <div class="container hero__grid">
         <div class="hero__content">
           <span class="eyebrow reveal"><svg><use href="#i-cross"/></svg> Clínica Veterinária em Recife</span>
-          <h1 class="reveal" data-delay="1">Cuidando da saúde do seu pet com <em>carinho</em> e excelência</h1>
+          <h1 class="reveal" data-delay="1">Cuidando da saúde do seu pet com
+            <em>carinho<svg class="squiggle" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 40 4, 70 4, 100 11 S 160 18, 197 6"/></svg></em>
+            e excelência</h1>
+
+          <p class="hero__text reveal" data-delay="2">Consultas, cirurgias, internamento, especialidades e exames para cães e gatos, tudo em um só lugar em Boa Viagem.</p>
 
           <div class="promo reveal" data-delay="2">
-            <span class="promo__tag">Castração popular</span>
+            <span class="promo__tag"><span class="live"></span> Castração popular</span>
             <span class="promo__text">Pergunte também sobre nossos <strong>planos de saúde pet</strong></span>
           </div>
 
-          <p class="hero__text reveal" data-delay="2">Atendimento veterinário completo para cães e gatos: consultas, cirurgias, internamento, especialidades e exames, tudo em um só lugar em Boa Viagem.</p>
-
-          <p class="hero__hours reveal" data-delay="3"><svg><use href="#i-clock"/></svg> Seg. a sex. 8h às 18h · Sáb. 8h às 13h</p>
-
           <div class="hero__actions reveal" data-delay="3">
-            <a href="https://api.whatsapp.com/send?phone=558132694186&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn--primary">
+            <a href="https://api.whatsapp.com/send?phone=558132694186&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn--white">
               <svg><use href="#i-whats"/></svg> Agendar consulta
             </a>
-            <a href="tel:+558132694186" class="btn btn--light"><svg><use href="#i-phone"/></svg> Ligar</a>
+            <a href="tel:+558132694186" class="btn btn--ghost"><svg><use href="#i-phone"/></svg> (81) 3269-4186</a>
           </div>
+
+          <ul class="hero__stats reveal" data-delay="4">
+            <li><strong><span class="count" data-to="4.6" data-dec="1">0</span><svg><use href="#i-star"/></svg></strong><small>nota no Google</small></li>
+            <li><strong><span class="count" data-to="379">0</span>+</strong><small>avaliações</small></li>
+            <li><strong>8h–18h</strong><small>seg. a sex. · sáb. até 13h</small></li>
+          </ul>
         </div>
 
-        <div class="hero__card reveal" data-delay="2">
-          <svg class="hero__steth" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 4v14a10 10 0 0 0 20 0V4M12 4H8m4 0h4m16 0h-4m4 0h4M22 28v6a8 8 0 0 0 16 0v-4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="38" cy="26" r="4" fill="none" stroke="currentColor" stroke-width="3"/></svg>
-          <div class="hero__tags">
-            <span>Consultas</span><span>Cirurgias</span><span>Internamento</span>
-            <span>Exames</span><span>Especialidades</span><span>Microchip</span>
+        <div class="hero__visual reveal" data-delay="2">
+          <div class="ring ring--dash"></div>
+          <div class="ring ring--glow"></div>
+          <div class="hero__circle"></div>
+          <span class="hero__shadow"></span>
+          <img src="assets/img/corgi-cut.webp" alt="Cachorro corgi feliz com a língua de fora" class="hero__dog" width="1000" height="855" />
+
+          <div class="fcard fc1">
+            <span class="fcard__icon"><svg><use href="#i-cross"/></svg></span>
+            <div><strong>Internamento</strong><small>acompanhamento completo</small></div>
           </div>
-          <svg class="hero__paw p1"><use href="#i-paw"/></svg>
-          <svg class="hero__paw p2"><use href="#i-paw"/></svg>
-          <svg class="hero__paw p3"><use href="#i-paw"/></svg>
-          <img src="assets/img/hero-corgi.jpg" alt="Cachorro corgi feliz deitado" class="hero__pet" />
-          <div class="hero__rating">
+          <div class="fcard fc2">
             <span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
-            <strong>4,6</strong>
-            <small>379 avaliações<br />no Google</small>
+            <small>“Profissional super atenciosa e humana!”</small>
+          </div>
+          <div class="fcard fc3">
+            <img src="assets/img/kitten.jpg" alt="" />
+            <div><strong>Cães &amp; gatos</strong><small>todas as idades</small></div>
           </div>
         </div>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__marquee-track">
+          <span>Consultas</span><i>+</i><span>Cirurgias</span><i>+</i><span>Internamento</span><i>+</i><span>Especialidades</span><i>+</i><span>Castração popular</span><i>+</i><span>Exames de imagem</span><i>+</i><span>Exames laboratoriais</span><i>+</i><span>Microchip</span><i>+</i>
+          <span>Consultas</span><i>+</i><span>Cirurgias</span><i>+</i><span>Internamento</span><i>+</i><span>Especialidades</span><i>+</i><span>Castração popular</span><i>+</i><span>Exames de imagem</span><i>+</i><span>Exames laboratoriais</span><i>+</i><span>Microchip</span><i>+</i>
+        </div>
+      </div>
+
+      <div class="hero__curve" aria-hidden="true">
+        <svg class="wave wave--back" viewBox="0 0 2880 160" preserveAspectRatio="none"><path d="M0 70 C 240 150, 480 150, 720 90 S 1200 10, 1440 70 S 1920 150, 2160 90 S 2640 10, 2880 70 V160 H0 Z"/></svg>
+        <svg class="wave wave--front" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0 60 C 320 150, 620 150, 900 90 C 1120 45, 1300 40, 1440 70 V140 H0 Z"/></svg>
       </div>
     </section>
 
     <!-- STATEMENT -->
     <section class="statement">
       <div class="container">
-        <p class="reveal">A Clínica Veterinária <span class="hl">“DogMania”</span> cuida de cães e gatos em Boa Viagem com uma equipe dedicada e uma estrutura completa, <span class="hl-dark">da consulta de rotina à cirurgia e ao internamento.</span></p>
+        <p class="words">A Clínica Veterinária <span class="hl">“DogMania”</span> cuida de cães e gatos em Boa Viagem com uma equipe dedicada e uma estrutura completa, <span class="hl-dark">da consulta de rotina à cirurgia e ao internamento.</span></p>
       </div>
     </section>
 
